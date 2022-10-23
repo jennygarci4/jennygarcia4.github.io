@@ -1,0 +1,60 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <style>
+            body{
+                background-color: rgb(161, 165, 240);
+                font-size: 17px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            form{
+                color: rgb(255, 255, 255);
+            background-color: rgb(63, 61, 96);
+            padding: 30px;
+            margin: 0 auto;
+            width: 300px;
+            border-radius: 20px;
+            font-family: Arial;
+            }
+            #enviar{
+                color: rgb(0, 0, 0);
+            border:0px;
+            background-color: rgb(173, 184, 222);
+            width:100px;
+            height:25px;
+            border-radius: 6px;
+            font-weight:bold;
+            }
+            </style>
+        </head>
+        <body>
+        <form name="act15" onsubmit="return verificar()">
+            <h1>Compra</h1>
+            <br>
+            <p>Elija un departamento</p>
+            <select id="departamento">
+                <option value="0" id="defecto">--</option>
+                <option value="Electrónica" id="electronica">Electrónica</option>
+                <option value="Juguetería" id="juguetes">Juguetería</option>
+            </select>
+            <br>
+            <br>
+            <label for="cantidad">Ingrese la cantidad de artículos a comprar:</label>
+            <input type="number" name="cantidad" id="cant">
+            <br>
+            <br>
+            <p>¿Cuenta con tarjeta de puntos?</p>
+            <input type="checkbox" name="targ_puntos" id="si">Si
+            <br>
+            <input type="checkbox" name="targ_puntos" id="no">No
+            <br>
+            <br>
+            <input type="submit" id="enviar" value="Calcular">
+        </form>
+     
+        <script src="tiend.js">     
+        </script>
+        </body>
+    </html>
+    
